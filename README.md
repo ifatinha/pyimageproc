@@ -68,15 +68,15 @@ pyimageproc/
 Contribuições são bem-vindas!
 Para contribuir:
 
-Faça um fork do repositório.
+1. Faça um fork do repositório.
 
-Crie uma branch (git checkout -b feature/nova-funcionalidade).
+2. Crie uma branch (git checkout -b feature/nova-funcionalidade).
 
-Commit suas mudanças (git commit -m "feat: descrição da mudança").
+3. Commit suas mudanças (git commit -m "feat: descrição da mudança").
 
-Faça um push (git push origin feature/nova-funcionalidade).
+4. Faça um push (git push origin feature/nova-funcionalidade).
 
-Abra um Pull Request.
+5. Abra um Pull Request.
 
 ## 📜 Licença
 
