@@ -1,0 +1,21 @@
+{
+  "name": "galaxy-starter",
+  "version": "1.0.0",
+  "description": "Pequeno projeto tutorial que reúne conceitos fundamentais do ecossistema JavaScript moderno: **ES Modules**, **npm scripts**, **Babel**, **Webpack**, **webpack-dev-server**, **CSS moderno** e uma simples interface interativa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifatinha/galaxy-starter.git"
+  },
+  "keywords": [],
+  "author": "Fatima Ferreira de Sousa",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ifatinha/galaxy-starter/issues"
+  },
+  "homepage": "https://github.com/ifatinha/galaxy-starter#readme"
+}

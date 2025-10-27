@@ -1,83 +1,84 @@
-# pyimageproc
+# Galaxy Starter
 
-# 📷 pyimageproc
+Pequeno projeto tutorial que reúne conceitos fundamentais do ecossistema JavaScript moderno: **ES Modules**, **npm scripts**, **Babel**, **Webpack**, **webpack-dev-server**, **CSS moderno** e uma simples interface interativa.
 
-`pyimageproc` é um pacote em Python para **processamento de imagens**, oferecendo funções simples e eficientes para manipulação, análise e transformação de imagens.  
-Ideal para estudantes, entusiastas e desenvolvedores que desejam explorar técnicas de visão computacional de forma prática.
+### Objetivo
 
----
+Criar um projeto mínimo que:
 
-## ✨ Funcionalidades
+- demonstre uso de módulos (`import` / `export`);
+- mostre transpilação com Babel;
+- empacote com Webpack e sirva com webpack-dev-server;
+- ofereça interface HTML/CSS/JS minimalista;
+- explique passo-a-passo para que outros possam aprender.
 
-- Leitura e salvamento de imagens.
-- Conversão entre formatos (JPEG, PNG, etc).
-- Redimensionamento, corte e rotação.
-- Aplicação de filtros básicos.
-- Transformações em escala de cinza.
-- Preparação de imagens para modelos de **Visão Computacional**.
+### Estrutura
 
----
+```
+galaxy-starter/
+├─ src/
+│ ├─ index.html
+│ ├─ index.js
+│ ├─ styles/main.css
+│ └─ utils/battle.js
+├─ dist/ (gerado)
+├─ webpack.config.cjs
+├─ .babelrc
+├─ package.json
+└─ README.md
+```
 
-## 🚀 Instalação
+### Instruções rápidas
 
-No futuro estará disponível no **PyPI** via `pip`.  
-Por enquanto, clone o repositório:
+1. Instale dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/pyimageproc.git
-cd pyimageproc
+npm install
 ```
 
-Se quiser instalar localmente:
+2. Rodar em modo desenvolvimento (com live-reload):
 
 ```bash
-pip install -e
+npm run dev
 ```
 
-## 🛠️ Como Usar
+3. Fazer build de produção:
 
-Exemplo simples:
-
-```
-    from pyimageproc import ImageProcessor
-
-    # Carregar imagem
-    img = ImageProcessor.load("exemplo.jpg")
-
-    # Converter para escala de cinza
-    gray = ImageProcessor.to_grayscale(img)
-
-    # Salvar imagem processada
-    ImageProcessor.save(gray, "saida.jpg")
+```bash
+npm run build
 ```
 
-## 📂 Estrutura do Projeto
+4. (Opcional) Visualizar dist com servidor estático:
 
-```
-pyimageproc/
-│── pyimageproc/
-│   ├── __init__.py
-│   ├── image_processor.py
-│── tests/
-│── README.md
-│── setup.py (ou pyproject.toml futuramente)
+```bash
+npm run preview
 ```
 
-## 🤝 Contribuição
+# Tecnologias usadas
 
-Contribuições são bem-vindas!
-Para contribuir:
+- **JavaScript** (ES6+ / ES Modules)
+- **Babel** (transpiler)
+- **Webpack** (bundler)
+- **HTML / CSS** (design minimalista moderno)
+- **dayjs** (formatação de data)
+- **LocalStorage** (para salvar logs no browser)
 
-1. Faça um fork do repositório.
+# Conceitos abordados
 
-2. Crie uma branch (git checkout -b feature/nova-funcionalidade).
+- **npm e package.json** (scripts e dependências)
+- **Módulos:** ES Modules (import/export)
+- **Babel:** preset-env para compatibilidade
+- **Webpack:** loaders (babel-loader, css-loader), plugins (HtmlWebpackPlugin, MiniCssExtractPlugin)
+- **webpack-dev-server:** ambiente de desenvolvimento com HMR
+- **Boas práticas:** separar `src/` e `dist/`, usar `.gitignore`, ter README detalhado
 
-3. Commit suas mudanças (git commit -m "feat: descrição da mudança").
+# Como contribuir
 
-4. Faça um push (git push origin feature/nova-funcionalidade).
+1. Fork o repositório
+2. Crie uma branch `feature/minha-mudanca`
+3. Faça commits claros
+4. Abra um pull request
 
-5. Abra um Pull Request.
+## Licença
 
-## 📜 Licença
-
-Este projeto está sob a licença MIT.
+Este projeto está licenciado sob a [Licença MIT](./LICENSE).
