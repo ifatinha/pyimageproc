@@ -21,3 +21,6 @@ rad.json
 #Test results file
 TestResults.xml
 node_modules
+dist/
+.env
+.DS_Store
