@@ -1,0 +1,18 @@
+// Babel configuration to transpile modern JS for compatibility
+
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "ie 11"]
+        },
+        "modules": false
+      }
+    ]
+  ]
+}
+
+// @babel/prevent-env converts modern features (arrow, optional chaining, etc.) to the target (browsers).
+// 'module:false' lets Webpack manage modules.
