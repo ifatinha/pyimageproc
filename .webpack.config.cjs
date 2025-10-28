@@ -63,7 +63,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 // Extrai CSS em arquivos separados em builds de produção
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { OptimizationStages } = require("webpack");
 
 // Detectando ambiente de produção
 const isProd = process.env.NODE_ENV === "production";
@@ -78,6 +77,8 @@ module.exports = {
     publicPath: "",
   },
 
+  // Em produção, source-map gera mapas completos, mas mais lentos.
+  // Em desenvolvimento, eval-cheap-module-source-map é rápido e suficiente para debug.
   devtool: isProd ? "source-map" : "eval-cheap-module-source-map",
 
   devServer: {
