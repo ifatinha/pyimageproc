@@ -154,6 +154,7 @@ runBtn.addEventListener("click", () => {
   const favor = favorEl.value || null;
   const rounds = Number(roundsEl.value || 3);
   const results = simulateRounds(rounds, favor);
+  alert(results);
   const summary = tally(results);
 
   statusEl.textContent = `Última simulação: vencedor — ${
@@ -170,6 +171,7 @@ runBtn.addEventListener("click", () => {
 saveBtn.addEventListener("click", () => {
   const details = detailsEl.textContent || "Nenhum resultado";
   const when = dayjs().format("DD/MM/YYYY HH:mm:ss");
+  alert(when);
   const logs = getLogs();
   logs.push({ when, details });
   setLogs(logs);
