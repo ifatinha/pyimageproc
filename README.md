@@ -1,67 +1,78 @@
-# Galaxy Starter
+# 🌌 Galaxy WebApp
 
-Pequeno projeto tutorial que reúne conceitos fundamentais do ecossistema JavaScript moderno: **ES Modules**, **npm scripts**, **Babel**, **Webpack**, **webpack-dev-server**, **CSS moderno** e uma simples interface interativa.
+O **Galaxy WebApp** é um projeto minimalista e moderno desenvolvido para praticar e demonstrar, na prática, os principais conceitos do **ecossistema JavaScript moderno** — incluindo:
 
-### Objetivo
+- ✅ **npm** e **npx**
+- ✅ **Módulos CommonJS** e **ES Modules**
+- ✅ **Babel** para transpilar código
+- ✅ **Webpack** para empacotar e otimizar
+- ✅ **Day.js** para manipulação de datas
+- ✅ **Git e GitHub Pages** para versionamento e publicação
 
-Criar um projeto mínimo que:
+---
 
-- demonstre uso de módulos (`import` / `export`);
-- mostre transpilação com Babel;
-- empacote com Webpack e sirva com webpack-dev-server;
-- ofereça interface HTML/CSS/JS minimalista;
-- explique passo-a-passo para que outros possam aprender.
+## 🎯 Objetivo
 
-### Estrutura
+O objetivo deste projeto é **consolidar o aprendizado** sobre as ferramentas que compõem o ambiente moderno de desenvolvimento front-end, entendendo **como cada parte se conecta**:
 
-```
-galaxy-starter/
-├─ src/
-│ ├─ index.html
-│ ├─ index.js
-│ ├─ styles/main.css
-│ └─ utils/battle.js
-├─ dist/ (gerado)
-├─ webpack.config.cjs
-├─ .babelrc
-├─ package.json
-└─ README.md
-```
+- Como organizar módulos e dependências com npm;
+- Como usar Babel para compatibilidade entre navegadores;
+- Como empacotar tudo com Webpack;
+- E, por fim, como **publicar o resultado final** com GitHub Pages.
 
-### Instruções rápidas
+---
 
-1. Instale dependências:
+## 🧩 Funcionalidades
 
-```bash
-npm install
-```
+- Exibição de informações com data e hora atual formatada com **Day.js**;
+- Interface minimalista, responsiva e elegante feita com **HTML + CSS moderno**;
+- Código modularizado e empacotado com **Webpack**;
+- Compatibilidade com navegadores antigos garantida pelo **Babel**.
 
-2. Rodar em modo desenvolvimento (com live-reload):
+---
 
-```bash
-npm run dev
-```
+## 🖼️ Demonstração
 
-3. Fazer build de produção:
+> 🌍 **Veja o projeto online:**  
+> [https://seu-usuario.github.io/galaxy-webapp](https://seu-usuario.github.io/galaxy-webapp)  
+> _(substitua “seu-usuario” pelo seu nome de usuário do GitHub)_
+
+---
+
+## 🧱 Estrutura do projeto
 
 ```bash
-npm run build
-```
-
-4. (Opcional) Visualizar dist com servidor estático:
-
-```bash
-npm run preview
+galaxy-webapp/
+├── dist/              # Código empacotado e pronto para produção
+│   ├── index.html
+│   ├── style.css
+│   └── bundle.js
+│
+├── src/               # Código-fonte original
+│   ├── index.js
+│   ├── modules/
+│   │   └── formatarData.js
+│   └── styles/
+│       └── main.css
+│
+├── package.json       # Configuração dos scripts npm e dependências
+├── webpack.config.js  # Configuração do empacotamento
+├── babel.config.json  # Configuração do Babel
+└── README.md
 ```
 
 # Tecnologias usadas
 
-- **JavaScript** (ES6+ / ES Modules)
-- **Babel** (transpiler)
-- **Webpack** (bundler)
-- **HTML / CSS** (design minimalista moderno)
-- **dayjs** (formatação de data)
-- **LocalStorage** (para salvar logs no browser)
+| Ferramenta             | Função                                              |
+| ---------------------- | --------------------------------------------------- |
+| **HTML5**              | Estrutura base da aplicação                         |
+| **CSS3 (moderno)**     | Estilos minimalistas e responsivos                  |
+| **JavaScript (ES6+)**  | Lógica da aplicação                                 |
+| **Day.js**             | Manipulação e formatação de datas                   |
+| **Babel**              | Transpilar código moderno para versões compatíveis  |
+| **Webpack**            | Empacotamento e otimização do código                |
+| **npm / npx**          | Gerenciamento de dependências e execução de scripts |
+| **Git & GitHub Pages** | Controle de versão e publicação online              |
 
 # Conceitos abordados
 
@@ -72,13 +83,61 @@ npm run preview
 - **webpack-dev-server:** ambiente de desenvolvimento com HMR
 - **Boas práticas:** separar `src/` e `dist/`, usar `.gitignore`, ter README detalhado
 
-# Como contribuir
+# 💻 Como executar localmente
+
+## 1️⃣ Clonar o repositório
+
+```git clone https://github.com/seu-usuario/galaxy-webapp.git
+cd galaxy-webapp
+```
+
+## 2️⃣ Instalar as dependências
+
+```
+npm install
+```
+
+## 3️⃣ Rodar o ambiente de desenvolvimento
+
+```
+npm start
+```
+
+## 4️⃣ Gerar o build de produção
+
+```
+npm run build
+```
+
+# 🚀 Publicação no GitHub Pages
+
+```
+npm run deploy
+```
+
+📦 Scripts npm disponíveis
+| Comando | Descrição |
+| ---------------- | ------------------------------------------------ |
+| `npm start` | Inicia o servidor de desenvolvimento com Webpack |
+| `npm run build` | Gera o bundle otimizado na pasta `dist` |
+| `npm run deploy` | Faz o build e publica no GitHub Pages |
+
+🤝 Contribuições
 
 1. Fork o repositório
 2. Crie uma branch `feature/minha-mudanca`
 3. Faça commits claros
 4. Abra um pull request
 
+Sinta-se à vontade para abrir issues e enviar pull requests com melhorias, ideias de novos recursos ou correções de bugs!
+
+🪄 Autor(a)
+👩‍💻 Fatinha
+
+Feito com ❤️ e curiosidade infinita pelo universo do JavaScript.
+
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](./LICENSE).
+Este projeto é de uso livre para fins de estudo e aprendizado.
+Sinta-se à vontade para clonar, modificar e adaptar como quiser.
