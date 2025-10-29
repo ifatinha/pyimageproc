@@ -1,0 +1,24 @@
+/*
+  Babel Configuration File
+
+  Presets:
+  - @babel/preset-env: Transpila código moderno JavaScript (ES6+) para compatibilidade com navegadores mais antigos.
+
+  Configurações:
+  - targets.browsers: Define os navegadores alvo (últimas 2 versões + IE 11).
+  - modules: false -> Preserva módulos ES6 (import/export) para que o bundler (ex: Webpack) faça o processamento.
+*/
+
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "ie 11"]
+        },
+        "modules": false
+      }
+    ]
+  ]
+}
