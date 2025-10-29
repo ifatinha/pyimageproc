@@ -154,7 +154,6 @@ runBtn.addEventListener("click", () => {
   const favor = favorEl.value || null;
   const rounds = Number(roundsEl.value || 3);
   const results = simulateRounds(rounds, favor);
-  alert(results);
   const summary = tally(results);
 
   statusEl.textContent = `Última simulação: vencedor — ${
