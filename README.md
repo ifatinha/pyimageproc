@@ -86,7 +86,8 @@ galaxy-webapp/
 
 ## 1️⃣ Clonar o repositório
 
-```git clone https://github.com/ifatinha/galaxy-starter.git
+```
+git clone https://github.com/ifatinha/galaxy-webapp.git
 cd galaxy-webapp
 ```
 
