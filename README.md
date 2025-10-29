@@ -34,8 +34,7 @@ O objetivo deste projeto é **consolidar o aprendizado** sobre as ferramentas qu
 ## 🖼️ Demonstração
 
 > 🌍 **Veja o projeto online:**  
-> [https://seu-usuario.github.io/galaxy-webapp](https://seu-usuario.github.io/galaxy-webapp)  
-> _(substitua “seu-usuario” pelo seu nome de usuário do GitHub)_
+> [https://ifatinha.github.io/galaxy-starter](https://ifatinha.github.io/galaxy-starter/)
 
 ---
 
@@ -87,7 +86,7 @@ galaxy-webapp/
 
 ## 1️⃣ Clonar o repositório
 
-```git clone https://github.com/seu-usuario/galaxy-webapp.git
+```git clone https://github.com/ifatinha/galaxy-starter.git
 cd galaxy-webapp
 ```
 
